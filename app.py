@@ -9,10 +9,6 @@ CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 REDIRECT_URI = os.getenv("REDIRECT_URI")
 
-'''CLIENT_ID = "2008472482210310"
-CLIENT_SECRET = "6hnRM1H6FVwycyWO1eggyMLYrpjx65yP"
-REDIRECT_URI = "https://mlauth.azurewebsites.net/callback"'''
-
 AUTH_URL = "https://auth.mercadolibre.com.co/authorization"
 TOKEN_URL = "https://api.mercadolibre.com/oauth/token"
 
