@@ -8,6 +8,11 @@ app = Flask(__name__)
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 REDIRECT_URI = os.getenv("REDIRECT_URI")
+
+'''CLIENT_ID = "2008472482210310"
+CLIENT_SECRET = "6hnRM1H6FVwycyWO1eggyMLYrpjx65yP"
+REDIRECT_URI = "https://a53d-186-81-124-162.ngrok-free.app/callback"'''
+
 AUTH_URL = "https://auth.mercadolibre.com.co/authorization"
 TOKEN_URL = "https://api.mercadolibre.com/oauth/token"
 
@@ -36,7 +41,7 @@ def callback():
 
         if access_token:
             # Redirigir al usuario de vuelta a la aplicación Streamlit pasando el access_token
-            return redirect(f" https://da8b-186-81-124-162.ngrok-free.app/?access_token={access_token}")
+            return redirect(f"https://infoautoapi.streamlit.app/?access_token={access_token}")
         else:
             return "Error obteniendo el token de acceso", 400
     else:
