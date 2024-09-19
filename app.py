@@ -11,7 +11,7 @@ REDIRECT_URI = os.getenv("REDIRECT_URI")
 
 '''CLIENT_ID = "2008472482210310"
 CLIENT_SECRET = "6hnRM1H6FVwycyWO1eggyMLYrpjx65yP"
-REDIRECT_URI = "https://a53d-186-81-124-162.ngrok-free.app/callback"'''
+REDIRECT_URI = "https://mlauth.azurewebsites.net/callback"'''
 
 AUTH_URL = "https://auth.mercadolibre.com.co/authorization"
 TOKEN_URL = "https://api.mercadolibre.com/oauth/token"
